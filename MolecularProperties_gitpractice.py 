@@ -1,0 +1,12 @@
+#git の練習
+# https://www.kaggle.com/artgor/molecular-properties-eda-and-models
+
+#!pip install -U vega_datasets notebook vega
+
+file_folder = '../input/champs-scalar-coupling' if 'champs-scalar-coupling' in os.listdir('../input/') else '../input'
+os.listdir(file_folder)
+
+train = pd.read_csv(f'{file_folder}/train.csv')
+test = pd.read_csv(f'{file_folder}/test.csv')
+sub = pd.read_csv(f'{file_folder}/sample_submission.csv')
+structures = pd.read_csv(f'{file_folder}/structures.csv')
